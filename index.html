@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="FreeCodeCamp Survey Project">
+        <meta name="author" content="Tebogo Mkhize">
+
+        <title>Survey Form | FreeCodeCamp Project</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 id="title">FreeCodeCamp Survey Form</h1>
+                <p id="description">Share your love and opinion(s) for animals...Thank you for taking the time to complete the survey!</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <form id="survey-form">
+                    <fieldset>
+                        <div>
+                            <label id="name-label" for="name"><span class="required">*</span> Enter Name:</label>
+                            <input id="name" class="make-block" type="text" placeholder="John Doe" required>
+                        </div>
+
+                        <div>
+                            <label id="email-label" for="email"><span class="required">*</span> Enter Email</label>
+                            <input id="email" class="make-block" type="email" placeholder="johndoe@gmail.com" required>
+                        </div>
+
+                        <div>
+                            <label id="number-label" for="number">How Many Animals Do You Own (0-50):</label>
+                            <input id="number" class="make-block" type="number" min="0" max="50" placeholder="5">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div>
+                            <label for="dropdown">Dogs or Cats?</label>
+                            <select id="dropdown" class="make-block">
+                                <option value="dogs">Dogs</option>
+                                <option value="cats">Cats</option>
+                                <option value="none">Eww...Neither</option>
+                            </select>
+                        </div>
+
+                        <div class="add-space">
+                            <label>Choose One:</label>
+                            <input id="lion" type="radio" name="choose-cat" value="lion" checked>
+                            <label for="lion">Lion</label>
+
+                            <input id="panther" type="radio" name="choose-cat" value="panther">
+                            <label for="panther">Panther</label>
+
+                            <input id="housecat" type="radio" name="choose-cat" value="housecat">
+                            <label for="lion">House Cat</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Select Animals/Pets You Like:</legend>
+
+                        <div>
+                            <input id="dogs" type="checkbox" name="animal" value="dogs">
+                            <label for="dogs">Dogs</label>  
+                        </div>
+
+                        <div>
+                            <input id="cats" type="checkbox" name="animal" value="cats">
+                            <label for="cats">Cats</label> 
+                        </div>
+
+                        <div>
+                            <input id="birds" type="checkbox" name="animal" value="birds">
+                        <label for="birds">Birds</label> 
+                        </div>
+
+                        <div>
+                            <input id="spiders" type="checkbox" name="animal" value="spiders">
+                            <label for="spiders">Spiders</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="add-space">
+                            <label for="message">Why do you love animals/pets?</label>
+                            <textarea id="message" class="make-block"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <input type="submit" id="submit" class="make-block" value="Submit">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
