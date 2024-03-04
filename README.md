@@ -12,6 +12,6 @@
 ###
 ### Screenshots:
 ##
-![home_1](readme_pictures/home_1.png)
+![home_1](readme_pictures/home_2.png)
 ###
-![home_2](readme_pictures/home_2.png)
+![home_2](readme_pictures/home_1.png)
